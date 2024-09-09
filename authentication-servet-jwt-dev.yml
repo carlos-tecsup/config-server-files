@@ -1,0 +1,12 @@
+server:
+  port: 9099
+
+microservicio:
+  security:
+    key: da0abde1e4d48a440e98f5f05495a3fc31f17b2c3e9b69362f447a3bf1a35f9ebed229b9003ddbe1393fdfc29842a795
+
+# Mongo Configuration
+spring:
+  data:
+    mongodb:
+      uri: mongodb://test:secret123@localhost:27017/licencia_conducir?authSource=admin
