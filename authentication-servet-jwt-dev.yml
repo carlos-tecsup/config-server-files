@@ -7,6 +7,17 @@ microservicio:
 
 # Mongo Configuration
 spring:
-  data:
-    mongodb:
-      uri: mongodb://test:secret123@localhost:27017/licencia_conducir?authSource=admin
+# Postgres Configuration
+  jpa:
+    databasePlatform:
+    hibernate: 
+      ddl-auto: create
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource: 
+    url: jdbc:postgresql://localhost:5432/licencia_conducir
+    username: test
+    password: '{cipher}e32aa7ab2ffa13cdf8350a242889e88345d02d2b873e0a7bd83a2c199b26a048'
