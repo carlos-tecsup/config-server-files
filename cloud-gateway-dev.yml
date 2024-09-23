@@ -22,7 +22,7 @@ spring:
     gateway:
       routes:
 
-        - id: license-service-route
+        - id: license-query-service-route
           uri: lb://licence-query-service #http://service-1.com, http://service-2.com
           predicates:
             - Path=/api/search-license/**
@@ -30,7 +30,13 @@ spring:
             - StripPrefix=2
             - AddRequestParameter=flag,true
         
-
+       - id: license-command-service-route
+          uri: lb://licence-command-service #http://service-1.com, http://service-2.com
+          predicates:
+            - Path=/api/create-license/**
+          filters:
+            - StripPrefix=2
+            - AddRequestParameter=flag,true
         # - id: user-service-route
         #   uri: lb://user-service
         #   predicates:
