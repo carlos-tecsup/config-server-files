@@ -3,7 +3,7 @@ server:
   
 microservicio:
   security:
-    key: jY2cZ8Aks6PMdYbllO2iEjqxMjbTiOx1
+    key: da0abde1e4d48a440e98f5f05495a3fc31f17b2c3e9b69362f447a3bf1a35f9ebed229b9003ddbe1393fdfc29842a795
 
 # resilience4j:
 #   circuitbreaker:
