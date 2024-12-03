@@ -1,5 +1,9 @@
 server:
   port: ${CUSTOM.SERVER.PORT:9080}
+  
+microservicio:
+  security:
+    key: jY2cZ8Aks6PMdYbllO2iEjqxMjbTiOx1
 
 # resilience4j:
 #   circuitbreaker:
@@ -48,6 +52,3 @@ spring:
         #     #    headerKey: MitocodeKey
         #     #    headerValue: MitocodeValue
         #     - UserServiceFilter=MitocodeKey,MitocodeValue
-microservicio:
-  security:
-    key: jY2cZ8Aks6PMdYbllO2iEjqxMjbTiOx1
