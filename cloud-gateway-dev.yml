@@ -27,7 +27,7 @@ spring:
       routes:
 
         - id: license-query-service-route
-          uri: lb://licence-query-service #http://service-1.com, http://service-2.com
+          uri: lb://license-query-service #http://service-1.com, http://service-2.com
           predicates:
             - Path=/api/search-license/**
           filters:
