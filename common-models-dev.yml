@@ -1,6 +1,3 @@
-server:
-  port: 9999
-
 # Mongo Configuration
 spring:
 # Postgres Configuration
