@@ -32,7 +32,6 @@ spring:
             - Path=/api/search-license/**
           filters:
             - StripPrefix=2
-            # - RewritePath=/api/search-license, /listLicense 
         
         - id: license-command-service-route
           uri: lb://licence-command-service #http://service-1.com, http://service-2.com
@@ -40,7 +39,6 @@ spring:
             - Path=/api/create-license/**
           filters:
             - StripPrefix=2
-            - AddRequestParameter=flag,true
         # - id: user-service-route
         #   uri: lb://user-service
         #   predicates:
