@@ -34,7 +34,7 @@ spring:
             - StripPrefix=2
         
         - id: license-command-service-route
-          uri: lb://licence-command-service #http://service-1.com, http://service-2.com
+          uri: lb://license-command-service #http://service-1.com, http://service-2.com
           predicates:
             - Path=/api/create-license/**
           filters:
