@@ -1,0 +1,15 @@
+server:
+  port: ${CUSTOM.SERVER.PORT:9790}
+
+# Mongo Configuration
+spring:
+  data:
+    mongodb:
+      uri: mongodb://test:luci@localhost:27017/ejercicio?authSource=admin
+
+# Kafka Parameters
+kafka:
+  license:
+    server: 127.0.0.1
+    port: 9092
+    topicName: license
