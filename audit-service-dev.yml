@@ -15,6 +15,12 @@ spring:
     url: jdbc:postgresql://localhost:5432/licencia_conducir
     username: test
     password: '{cipher}e32aa7ab2ffa13cdf8350a242889e88345d02d2b873e0a7bd83a2c199b26a048'
+
+# Mongo Configuration
+  data:
+    mongodb:
+      uri: mongodb://test:luci@localhost:27017/ejercicio?authSource=admin
+
 # Kafka Parameters
 kafka:
   license:
