@@ -4,6 +4,9 @@ server:
 # Mongo Configuration
 spring:
 # Postgres Configuration
+  data:
+    mongodb:
+      uri: mongodb://test:secret123@localhost:27017/licencia_conducir?authSource=admin
   jpa:
     databasePlatform:
     hibernate: 
@@ -13,9 +16,7 @@ spring:
         hibernate:
           format_sql: true
           dialect: org.hibernate.dialect.PostgreSQLDialect
-  data:
-    mongodb:
-      uri: mongodb://test:secret123@localhost:27017/licencia_conducir?authSource=admin
+
 
   datasource: 
     url: jdbc:postgresql://localhost:5432/licencia_conducir
