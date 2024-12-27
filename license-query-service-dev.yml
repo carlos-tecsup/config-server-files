@@ -6,4 +6,4 @@ spring:
 # Mongo Configuration
   data:
     mongodb:
-      uri: mongodb://test:secret123@localhost:27017/licencia_conducir?authSource=test
+      uri: mongodb://test:secret123@localhost:27017/licencia_conducir?authSource=admin
