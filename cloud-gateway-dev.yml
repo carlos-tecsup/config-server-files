@@ -29,7 +29,7 @@ spring:
         - id: license-query-service-route
           uri: lb://license-query-service #http://service-1.com, http://service-2.com
           predicates:
-            - Path=/api/query-license/**
+            - Path=/api/query-license/**, /license-service/v3/api-docs
           filters:
             - StripPrefix=2
         
