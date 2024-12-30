@@ -29,7 +29,7 @@ spring:
         - id: license-query-service-route
           uri: lb://license-query-service #http://service-1.com, http://service-2.com
           predicates:
-            - Path=/api/query-license/**,/license-service/v3/api-docs
+            - Path=/api/query-license/**
           filters:
             - StripPrefix=2
         
@@ -50,9 +50,3 @@ spring:
         #     #    headerKey: MitocodeKey
         #     #    headerValue: MitocodeValue
         #     - UserServiceFilter=MitocodeKey,MitocodeValue
-
-springdoc:
-  api-docs:
-    path: /v3/api-docs # Ruta en el Gateway para la documentación combinada
-  swagger-ui:
-    path: /swagger-ui.html # Ruta para acceder a Swagger UI en el Gateway
