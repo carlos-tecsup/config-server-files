@@ -50,3 +50,9 @@ spring:
         #     #    headerKey: MitocodeKey
         #     #    headerValue: MitocodeValue
         #     - UserServiceFilter=MitocodeKey,MitocodeValue
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs # Ruta en el Gateway para la documentación combinada
+  swagger-ui:
+    path: /swagger-ui.html # Ruta para acceder a Swagger UI en el Gateway
