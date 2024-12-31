@@ -36,14 +36,14 @@ spring:
         - id: license-command-service-route
           uri: lb://license-command-service #http://service-1.com, http://service-2.com
           predicates:
-            - Path=/api/txn-license/**
+            - Path=/api/txn-license/**, /command-license/v3/api-docs
           filters:
             - StripPrefix=2
 
         - id: license-auth-service-route
           uri: lb://authentication-servet-jwt
           predicates:
-            - Path=/api/auth-license/**
+            - Path=/api/auth-license/**, /auth-license/v3/api-docs
           filters:
             - StripPrefix=2
             
