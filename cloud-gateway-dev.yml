@@ -41,7 +41,7 @@ spring:
             - StripPrefix=2
 
         - id: license-auth-service-route
-          uri: lb://license-auth-service #http://service-1.com, http://service-2.com
+          uri: lb://authentication-servet-jwt
           predicates:
             - Path=/api/auth-license/**
           filters:
